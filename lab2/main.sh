@@ -3,7 +3,7 @@
 while true; do
 
 #создание блокировки
-exec 3>/var/lockfile
+exec 3>/shared_volume/lockfile
 flock -x 3 
 
 # Функция для получения доступного имени файла (001, 002 и тд)
